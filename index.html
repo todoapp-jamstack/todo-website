@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Minimal todo webapp</title>
     <!-- Meta tags -->
     <meta charset="utf-8">
@@ -8,30 +9,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS  -->
     <link rel="stylesheet" href="css/mini-default.min.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Headers -->
     <header>
-      <hnsert mode: escape to normal and save1>Minimal todo webapp mod</h1>
+        <hnsert mode: escape to normal and save1>Minimal todo webapp mod</h1>
     </header>
     <!-- Login form -->
     <section>
-      <h2>To use the application, please login!</h2>
-      <form method="POST">
-        <fieldset>
-          <legend>Login form</legend>
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" required>
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required>
-          <input type="submit" value="log in">
-        </fieldset>
-        <small>If you want an account shoot me an email to <a href="mailto:address_mail">this address.</a></small>
-      </form>
+        <h2>To use the application, please login!</h2>
+        <form method="POST" id="loginForm">
+            <fieldset>
+                <legend>Login form</legend>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="Username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="Password" required>
+                <input type="submit" value="log in">
+            </fieldset>
+            <small>If you want an account shoot me an email to <a href="mailto:address_mail">this address.</a></small>
+        </form>
     </section>
     <!-- Footer -->
     <footer>
-      <p>Website made by Antonio Gagliarducci - there is no copyright, do what you want.</p>
+        <p>Website made by Antonio Gagliarducci - there is no copyright, do what you want.</p>
     </footer>
-  </body>
+
+    <!-- JS -->
+    <script src="js/login.js"></script>
+</body>
+
 </html>
