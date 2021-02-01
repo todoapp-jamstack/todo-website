@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Minimal todo webapp</title>
+    <title>Login page</title>
     <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="author" content="Antonio Gagliarducci">
@@ -37,7 +37,34 @@
     </header>
     <!-- Login form -->
     <section>
-        <h2>Hi there, if you see this, you need to <a href="login.html">log in</a>.</h2>
+
+        <div class="row responsive-margin">
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <form method="POST" id="loginForm">
+                    <fieldset>
+                        <legend>Login form</legend>
+                        <div class="input-group fluid col-sm-12">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="Username" placeholder="user" required>
+                        </div>
+                        <div class="input-group fluid col-sm-12">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="Password" placeholder="*****" required>
+                        </div>
+                        <input type="submit" value="Log in" class="primary">
+                        <br>
+                        <small>If you want to create an account <a href="signup.html">click here</a>.</small>
+                    </fieldset>
+                </form>
+
+                <button class="inverse" id="backButton">Go back</button>
+
+            </div>
+
+        </div>
+
     </section>
     <!-- Footer -->
     <footer>
@@ -48,7 +75,8 @@
     </footer>
 
     <!-- JS -->
-    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/tools.js"></script>
 </body>
 
 </html>
